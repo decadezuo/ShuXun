@@ -15,7 +15,7 @@ import com.decade.shuxun.R;
  * @author: Decade
  * @date: 2014-6-13
  */
-public class SampleBaseActivity extends DZAgileActivity {
+public class ShuXunBaseActivity extends DZAgileActivity {
 
 	protected void initTitle(int title) {
 		setTopViewVisibility(View.VISIBLE);

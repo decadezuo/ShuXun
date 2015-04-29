@@ -7,6 +7,6 @@ import com.decade.framework.DZApplication;
  * @author: Decade
  * @date: 2014-6-13
  */
-public class ShuxunApp extends DZApplication{
+public class ShuXunApp extends DZApplication{
 
 }
