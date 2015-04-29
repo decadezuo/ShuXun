@@ -5,15 +5,15 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.decade.agile.DCAgileView;
-import com.decade.framework.DCBaseViewActivity;
-import com.decade.framework.DCiReceiveData;
+import com.decade.agile.DZAgileView;
+import com.decade.framework.DZBaseViewActivity;
+import com.decade.framework.DZiReceiveData;
 import com.decade.shuxun.R;
 
-public class MessageView extends DCAgileView implements DCiReceiveData{
+public class MessageView extends DZAgileView implements DZiReceiveData{
 	private Context context;
 
-	public MessageView(ViewGroup root, DCBaseViewActivity parent) {
+	public MessageView(ViewGroup root, DZBaseViewActivity parent) {
 		super(root, parent);
 		context = getContext();
 	}

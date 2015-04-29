@@ -7,7 +7,7 @@ import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.widget.LinearLayout;
 
-import com.decade.agile.DCAgileActivity;
+import com.decade.agile.DZAgileActivity;
 import com.decade.shuxun.R;
 
 /**
@@ -15,7 +15,7 @@ import com.decade.shuxun.R;
  * @author: Decade
  * @date: 2014-6-13
  */
-public class SplashActivity extends DCAgileActivity {
+public class SplashActivity extends DZAgileActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

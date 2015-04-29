@@ -5,14 +5,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
-import com.decade.agile.DCAgileBaseViewActivity;
-import com.decade.agile.components.DCCommonTopView;
-import com.decade.agile.kit.DCExitDoubleClick;
-import com.decade.agile.kit.DCWorkspace;
-import com.decade.framework.DCiBottomView;
-import com.decade.framework.DCiTopView;
+import com.decade.agile.DZAgileBaseViewActivity;
+import com.decade.agile.components.DZCommonTopView;
+import com.decade.agile.kit.DZExitDoubleClick;
+import com.decade.agile.kit.DZWorkspace;
+import com.decade.framework.DZiBottomView;
+import com.decade.framework.DZiTopView;
 import com.decade.shuxun.R;
-import com.decade.shuxun.component.DCMessageBottomView;
+import com.decade.shuxun.component.DZMessageBottomView;
 import com.decade.shuxun.factory.ViewDefine;
 import com.decade.shuxun.factory.ViewFactory;
 
@@ -21,10 +21,10 @@ import com.decade.shuxun.factory.ViewFactory;
  * @author: Decade
  * @date: 2014-6-16
  */
-public class MainActivity extends DCAgileBaseViewActivity {
+public class MainActivity extends DZAgileBaseViewActivity {
 
 	
-	DCMessageBottomView commonBottomView;
+	DZMessageBottomView commonBottomView;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -32,7 +32,7 @@ public class MainActivity extends DCAgileBaseViewActivity {
 		setTopViewBackground(R.drawable.nav_bar);
 		setTopViewVisibility(View.VISIBLE);
 		setTopLeftViewBackground(R.drawable.selector_title_back);
-		DCWorkspace.saveWorkspaceSize(this);
+		DZWorkspace.saveWorkspaceSize(this);
 		setViewFactory(new ViewFactory());
 		startPage(ViewDefine.VIEWDEFINE_HOME, null, false);
 		setTopLeftAction(new OnClickListener() {
@@ -49,14 +49,14 @@ public class MainActivity extends DCAgileBaseViewActivity {
 	}
 	
 	@Override
-	protected DCiTopView getTopViewLoader() {
-		return new DCCommonTopView(this,
+	protected DZiTopView getTopViewLoader() {
+		return new DZCommonTopView(this,
 				((ViewGroup) findViewById(R.id.main_top_view)));
 	}
 	
 	@Override
-	protected DCiBottomView getBottomViewLoader() {
-		 commonBottomView = new DCMessageBottomView(this,
+	protected DZiBottomView getBottomViewLoader() {
+		 commonBottomView = new DZMessageBottomView(this,
 				((ViewGroup) findViewById(R.id.main_bottom_view))) {
 
 			@Override
@@ -89,7 +89,7 @@ public class MainActivity extends DCAgileBaseViewActivity {
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
 			// 如果用户按下了返回键
 			if (!super.onKeyDown(keyCode, event)) {
-				DCExitDoubleClick.getInstance(this).doDoubleClick(1500,
+				DZExitDoubleClick.getInstance(this).doDoubleClick(1500,
 						"再按一次返回键退出");
 			}
 		}

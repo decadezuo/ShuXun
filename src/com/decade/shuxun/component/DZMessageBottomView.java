@@ -5,8 +5,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
-import com.decade.framework.DCiBottomView;
+import com.decade.framework.DZiBottomView;
 import com.decade.shuxun.R;
 
 /**
@@ -14,7 +15,7 @@ import com.decade.shuxun.R;
  * @author: Decade
  * @date: 2013-6-27
  */
-public class DCMessageBottomView implements DCiBottomView, OnClickListener {
+public class DZMessageBottomView implements DZiBottomView, OnClickListener {
 
 	private View _view;
 	public RadioButton first_btn;
@@ -23,7 +24,7 @@ public class DCMessageBottomView implements DCiBottomView, OnClickListener {
 	public RadioButton fourth_btn;
 	public RadioButton tempButton;
 
-	public DCMessageBottomView(Context context, ViewGroup root) {
+	public DZMessageBottomView(Context context, ViewGroup root) {
 		_view = View.inflate(context, R.layout.layout_message_bottom, root);
 		first_btn = (RadioButton) _view
 				.findViewById(R.id.message_bottom_first_btn);
@@ -90,5 +91,11 @@ public class DCMessageBottomView implements DCiBottomView, OnClickListener {
 			tempButton = fourth_btn;
 		}
 
+	}
+
+	@Override
+	public TextView getUnreadView() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

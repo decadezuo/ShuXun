@@ -5,9 +5,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
-import com.decade.agile.DCAgileActivity;
-import com.decade.agile.components.DCCommonTopView;
-import com.decade.framework.DCiTopView;
+import com.decade.agile.DZAgileActivity;
+import com.decade.agile.components.DZCommonTopView;
+import com.decade.framework.DZiTopView;
 import com.decade.shuxun.R;
 
 /**
@@ -15,7 +15,7 @@ import com.decade.shuxun.R;
  * @author: Decade
  * @date: 2014-6-13
  */
-public class SampleBaseActivity extends DCAgileActivity {
+public class SampleBaseActivity extends DZAgileActivity {
 
 	protected void initTitle(int title) {
 		setTopViewVisibility(View.VISIBLE);
@@ -31,8 +31,8 @@ public class SampleBaseActivity extends DCAgileActivity {
 	}
 
 	@Override
-	protected DCiTopView getTopViewLoader() {
-		return new DCCommonTopView(this,
+	protected DZiTopView getTopViewLoader() {
+		return new DZCommonTopView(this,
 				((ViewGroup) findViewById(R.id.main_top_view)));
 	}
 

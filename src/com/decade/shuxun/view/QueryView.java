@@ -5,14 +5,14 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.decade.agile.DCAgileView;
-import com.decade.framework.DCBaseViewActivity;
+import com.decade.agile.DZAgileView;
+import com.decade.framework.DZBaseViewActivity;
 import com.decade.shuxun.R;
 
-public class QueryView extends DCAgileView{
+public class QueryView extends DZAgileView{
 	private Context context;
 
-	public QueryView(ViewGroup root, DCBaseViewActivity parent) {
+	public QueryView(ViewGroup root, DZBaseViewActivity parent) {
 		super(root, parent);
 		context = getContext();
 	}

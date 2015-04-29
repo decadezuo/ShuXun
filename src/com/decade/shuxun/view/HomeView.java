@@ -6,14 +6,14 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.decade.agile.DCAgileView;
-import com.decade.framework.DCBaseViewActivity;
+import com.decade.agile.DZAgileView;
+import com.decade.framework.DZBaseViewActivity;
 import com.decade.shuxun.R;
 
-public class HomeView extends DCAgileView{
+public class HomeView extends DZAgileView{
 	private Context context;
 
-	public HomeView(ViewGroup root, DCBaseViewActivity parent) {
+	public HomeView(ViewGroup root, DZBaseViewActivity parent) {
 		super(root, parent);
 		context = getContext();
 	}
@@ -39,7 +39,7 @@ public class HomeView extends DCAgileView{
 	protected void start(Object arg0) {
 		// TODO Auto-generated method stub
 		addTopTitle("主页", Color.WHITE,
-				getDimension(R.dimen.title_size));
+				getDimensionById(R.dimen.title_size));
 	}
 	
 	

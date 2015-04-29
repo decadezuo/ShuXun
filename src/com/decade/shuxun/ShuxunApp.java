@@ -1,12 +1,12 @@
 package com.decade.shuxun;
 
-import com.decade.framework.DCApplication;
+import com.decade.framework.DZApplication;
 
 /**
  * @description: 应用Application
  * @author: Decade
  * @date: 2014-6-13
  */
-public class SampleApp extends DCApplication{
+public class ShuxunApp extends DZApplication{
 
 }
