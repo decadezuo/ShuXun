@@ -6,9 +6,9 @@ import com.decade.framework.DZBaseView;
 import com.decade.framework.DZBaseViewActivity;
 import com.decade.framework.DZiViewFactory;
 import com.decade.shuxun.view.HomeView;
-import com.decade.shuxun.view.MessageView;
+import com.decade.shuxun.view.BagView;
 import com.decade.shuxun.view.MoreView;
-import com.decade.shuxun.view.QueryView;
+import com.decade.shuxun.view.SortView;
 
 
 public class ViewFactory implements DZiViewFactory{
@@ -20,10 +20,10 @@ public class ViewFactory implements DZiViewFactory{
 			view = new HomeView(root, parent);
 			break;
 		case ViewDefine.VIEWDEFINE_QUERY:
-			view = new QueryView(root, parent);
+			view = new SortView(root, parent);
 			break;
 		case ViewDefine.VIEWDEFINE_MESSAGE:
-			view = new MessageView(root, parent);
+			view = new BagView(root, parent);
 			break;
 		case ViewDefine.VIEWDEFINE_SETTING:
 			view = new MoreView(root, parent);

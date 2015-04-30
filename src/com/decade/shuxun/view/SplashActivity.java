@@ -8,18 +8,24 @@ import android.view.animation.Animation.AnimationListener;
 import android.widget.LinearLayout;
 
 import com.decade.agile.DZAgileActivity;
+import com.decade.agile.kit.DZWorkspace;
+import com.decade.framework.DZApplication;
+import com.decade.framework.network.DZNetCheck;
 import com.decade.shuxun.R;
 
 /**
  * @description: 闪屏页面
+ * @version: 1.0
  * @author: Decade
- * @date: 2014-6-13
+ * @date: 2015-4-30
  */
 public class SplashActivity extends DZAgileActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.splash_act);
+		DZApplication.getApp().setNetStatus(DZNetCheck.checkNet(this));
+		DZWorkspace.saveWorkspaceSize(this);
 		startAnimation();
 	}
 

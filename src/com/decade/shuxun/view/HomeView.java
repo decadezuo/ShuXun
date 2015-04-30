@@ -42,15 +42,5 @@ public class HomeView extends DZAgileView{
 				getDimensionById(R.dimen.title_size));
 	}
 	
-	
-	@Override
-	protected boolean onKeyDown(int keyCode, KeyEvent event) {
-		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			return false;
-		}
-		return super.onKeyDown(keyCode, event);
-	}
-
-
 
 }

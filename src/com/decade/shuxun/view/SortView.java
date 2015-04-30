@@ -7,17 +7,16 @@ import android.view.ViewGroup;
 
 import com.decade.agile.DZAgileView;
 import com.decade.framework.DZBaseViewActivity;
-import com.decade.framework.DZiReceiveData;
 import com.decade.shuxun.R;
 
-public class MessageView extends DZAgileView implements DZiReceiveData{
+public class SortView extends DZAgileView{
 	private Context context;
 
-	public MessageView(ViewGroup root, DZBaseViewActivity parent) {
+	public SortView(ViewGroup root, DZBaseViewActivity parent) {
 		super(root, parent);
 		context = getContext();
 	}
-
+ 
 	@Override
 	protected void close() {
 		// TODO Auto-generated method stub
@@ -26,33 +25,18 @@ public class MessageView extends DZAgileView implements DZiReceiveData{
 
 	@Override
 	protected View create() {
-		View view = inflateView(R.layout.message_view, null);
+		View view = inflateView(R.layout.query_view, null);
 		initViews(view);
 		return view;
 	}
 	
 	public void initViews(View view) {
-	   
+		
 	}
 
 	@Override
 	protected void start(Object arg0) {
-		setTopTitleText("消息");
-	}
-	
-	
-	
-	@Override
-	protected boolean onKeyDown(int keyCode, KeyEvent event) {
-		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			return false;
-		}
-		return super.onKeyDown(keyCode, event);
+		setTopTitleText("分类");
 	}
 
-	@Override
-	public boolean onReceiveData(Object arg0, int arg1) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 }

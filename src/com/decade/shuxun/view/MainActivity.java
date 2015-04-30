@@ -31,8 +31,7 @@ public class MainActivity extends DZAgileBaseViewActivity {
 		setContentView(R.layout.main_act);
 		setTopViewBackground(R.drawable.nav_bar);
 		setTopViewVisibility(View.VISIBLE);
-		setTopLeftViewBackground(R.drawable.selector_title_back);
-		DZWorkspace.saveWorkspaceSize(this);
+		//setTopLeftViewBackground(R.drawable.selector_title_back);  
 		setViewFactory(new ViewFactory());
 		startPage(ViewDefine.VIEWDEFINE_HOME, null, false);
 		setTopLeftAction(new OnClickListener() {

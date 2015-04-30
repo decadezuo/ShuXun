@@ -4,29 +4,10 @@
     android:layout_height="fill_parent"
     android:background="@android:color/white" >
 
-    <LinearLayout
-        android:id="@+id/main_top_view"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="vertical" >
-    </LinearLayout>
+    <LinearLayout style="@style/main_top_view" />
 
-    <LinearLayout
-        android:id="@+id/main_bottom_view"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal" >
-    </LinearLayout>
+    <LinearLayout style="@style/main_bottom_view" />
 
-    <LinearLayout
-        android:id="@+id/main_center_view"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_above="@id/main_bottom_view"
-        android:layout_below="@id/main_top_view"
-        android:orientation="vertical" >
-    </LinearLayout>
+    <LinearLayout style="@style/main_center_view" />
 
 </RelativeLayout>

@@ -1,7 +1,6 @@
 package com.decade.shuxun.view;
 
 import android.content.Context;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -39,12 +38,5 @@ public class MoreView extends DZAgileView {
 		setTopTitleText("更多");
 	}
 
-	@Override
-	protected boolean onKeyDown(int keyCode, KeyEvent event) {
-		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			return false;
-		}
-		return super.onKeyDown(keyCode, event);
-	}
 
 }
