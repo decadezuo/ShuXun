@@ -5,6 +5,6 @@
 
 # 主要功能
 
-![](https://github.com/decadezuo/ShuXun/blob/master/doc/function.png)
+![](https://github.com/decadezuo/ShuXun/blob/master/doc/function.jpeg)
 
 ### 正在开发中...
