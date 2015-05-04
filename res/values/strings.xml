@@ -4,8 +4,8 @@
     <string name="app_name">书寻</string>
     <!-- 首页 -->
     <string name="tab_home">首页</string>
-    <string name="tab_query">分类</string>
-    <string name="tab_message">书包</string>
+    <string name="tab_sort">分类</string>
+    <string name="tab_bag">书包</string>
     <string name="tab_more">更多</string>
 
 </resources>

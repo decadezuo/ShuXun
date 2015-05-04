@@ -19,7 +19,7 @@ public class ShuXunBaseActivity extends DZAgileActivity {
 
 	protected void initTitle(int title) {
 		setTopViewVisibility(View.VISIBLE);
-		setTopViewBackground(R.drawable.nav_bar);
+		setTopViewBackground(R.drawable.titlebar_bg);
 		setTopLeftViewBackground(R.drawable.selector_title_back);
 		addTopTitle(title, Color.WHITE, 18);
 		setTopLeftAction(new OnClickListener() {

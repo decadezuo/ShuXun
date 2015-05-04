@@ -10,9 +10,8 @@
         <item name="android:baselineAligned">false</item>
     </style>
 
-    <style name="MessageBottomItem">
+    <style name="tab_item">
         <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@android:color/white</item>
         <item name="android:layout_width">0dip</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:button">@null</item>

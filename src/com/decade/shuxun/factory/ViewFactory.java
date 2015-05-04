@@ -19,10 +19,10 @@ public class ViewFactory implements DZiViewFactory{
 		case ViewDefine.VIEWDEFINE_HOME:
 			view = new HomeView(root, parent);
 			break;
-		case ViewDefine.VIEWDEFINE_QUERY:
+		case ViewDefine.VIEWDEFINE_SORT:
 			view = new SortView(root, parent);
 			break;
-		case ViewDefine.VIEWDEFINE_MESSAGE:
+		case ViewDefine.VIEWDEFINE_BAG:
 			view = new BagView(root, parent);
 			break;
 		case ViewDefine.VIEWDEFINE_SETTING:

@@ -1,6 +1,7 @@
 package com.decade.shuxun.component;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -39,6 +40,7 @@ public class DZMessageBottomView implements DZiBottomView, OnClickListener {
 		third_btn.setOnClickListener(this);
 		fourth_btn.setOnClickListener(this);
 		tempButton = first_btn;
+		tempButton.setTextColor(getTabItemSelectedTextColor());
 	}
 
 	@Override
@@ -48,6 +50,14 @@ public class DZMessageBottomView implements DZiBottomView, OnClickListener {
 
 	public void bottomItemOnClick(View view, int index) {
 
+	}
+	
+	public int getTabItemNormalTextColor(){
+		return Color.WHITE;
+	}
+	
+	public int getTabItemSelectedTextColor(){
+		return Color.WHITE;
 	}
 
 	@Override
@@ -77,6 +87,7 @@ public class DZMessageBottomView implements DZiBottomView, OnClickListener {
 	@Override
 	public void setItemSelected(int index) {
 		tempButton.setChecked(false);
+		tempButton.setTextColor(getTabItemNormalTextColor());
 		if (index == 0) {
 			first_btn.setChecked(true);
 			tempButton = first_btn;
@@ -90,7 +101,7 @@ public class DZMessageBottomView implements DZiBottomView, OnClickListener {
 			fourth_btn.setChecked(true);
 			tempButton = fourth_btn;
 		}
-
+		tempButton.setTextColor(getTabItemSelectedTextColor());
 	}
 
 	@Override

@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import com.decade.agile.DZAgileBaseViewActivity;
 import com.decade.agile.components.DZCommonTopView;
 import com.decade.agile.kit.DZExitDoubleClick;
-import com.decade.agile.kit.DZWorkspace;
 import com.decade.framework.DZiBottomView;
 import com.decade.framework.DZiTopView;
 import com.decade.shuxun.R;
@@ -29,7 +28,7 @@ public class MainActivity extends DZAgileBaseViewActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_act);
-		setTopViewBackground(R.drawable.nav_bar);
+		setTopViewBackground(R.drawable.titlebar_bg);
 		setTopViewVisibility(View.VISIBLE);
 		//setTopLeftViewBackground(R.drawable.selector_title_back);  
 		setViewFactory(new ViewFactory());
@@ -66,10 +65,10 @@ public class MainActivity extends DZAgileBaseViewActivity {
 					startPage(ViewDefine.VIEWDEFINE_HOME, null, true);
 					break;
 				case 1:
-					startPage(ViewDefine.VIEWDEFINE_QUERY, null, true);
+					startPage(ViewDefine.VIEWDEFINE_SORT, null, true);
 					break;
 				case 2:
-					startPage(ViewDefine.VIEWDEFINE_MESSAGE, null, true);
+					startPage(ViewDefine.VIEWDEFINE_BAG, null, true);
 					break;
 				case 3:
 					startPage(ViewDefine.VIEWDEFINE_SETTING, null, true);
@@ -78,6 +77,13 @@ public class MainActivity extends DZAgileBaseViewActivity {
 					break;
 				}
 			}
+
+			@Override
+			public int getTabItemSelectedTextColor() {
+				return getColorById(R.color.home_tab_selected_textcolor);
+			}
+			
+			
 
 		};
 		return commonBottomView;

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="main_bg">#e6e8ec</color>
+    <color name="home_tab_selected_textcolor">#def32c</color>
+</resources>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/layout_fill_wrap"
-    android:background="@drawable/nav_foot"
+    android:background="@drawable/footbar_bg"
     android:gravity="center_vertical"
     android:orientation="horizontal" >
 
     <RadioButton
         android:id="@+id/message_bottom_first_btn"
-        style="@style/MessageBottomItem"
+        style="@style/tab_item"
         android:checked="true"
-        android:drawableTop="@drawable/tab_address"
+        android:drawableTop="@drawable/tab_home_selector"
         android:text="@string/tab_home" />
 
     <RadioButton
         android:id="@+id/message_bottom_second_btn"
-        style="@style/MessageBottomItem"
-        android:drawableTop="@drawable/tab_address"
-        android:text="@string/tab_query" />
+        style="@style/tab_item"
+        android:drawableTop="@drawable/tab_sort_selector"
+        android:text="@string/tab_sort" />
 
     <FrameLayout
         android:layout_width="0.0dip"
@@ -30,9 +30,9 @@
 
             <RadioButton
                 android:id="@+id/message_bottom_third_btn"
-                style="@style/MessageBottomItem"
-                android:drawableTop="@drawable/tab_address"
-                android:text="@string/tab_message" />
+                style="@style/tab_item"
+                android:drawableTop="@drawable/tab_bag_selector"
+                android:text="@string/tab_bag" />
         </LinearLayout>
 
         <TextView
@@ -50,8 +50,8 @@
 
     <RadioButton
         android:id="@+id/message_bottom_fourth_btn"
-        style="@style/MessageBottomItem"
-        android:drawableTop="@drawable/tab_address"
+        style="@style/tab_item"
+        android:drawableTop="@drawable/tab_more_selector"
         android:text="@string/tab_more" />
 
 </LinearLayout>
