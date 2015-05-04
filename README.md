@@ -3,5 +3,8 @@
 
 ![](https://github.com/decadezuo/ShuXun/blob/master/doc/app_splash.png)
 
+# 主要功能
+
+![](https://github.com/decadezuo/ShuXun/blob/master/doc/function.png)
 
 ### 正在开发中...
